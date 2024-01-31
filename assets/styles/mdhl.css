@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2{
+    display: inline;
+}
+
+.header__principal nav a {
+    border: solid #e22d00;
+    font-style: normal;
+    display: inline;
+}
