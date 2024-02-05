@@ -108,7 +108,7 @@ main{
     background-color: #5fa199;
     border: 2px solid #db3a12;
     border-radius: 25px;
-    width: 30vw;
+    width: 500px;
     
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 30px;
@@ -138,7 +138,7 @@ main{
     color: #ffffff;
     
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     
     display: flex;
     flex-direction: column;
@@ -154,7 +154,7 @@ main{
 }
 
 .caja h3{
-    font-size: 18px;
+    font-size: 22px;
     font-weight: bold;
 
     margin-bottom: 10px;
@@ -165,4 +165,100 @@ footer{
     
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 16px;
+}
+
+/*rules*/
+
+.lista{
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.lista_2{
+    list-style-type: lower-latin;
+
+    padding-left: 30px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.item{
+    list-style-type: circle;
+
+    padding-left: 50px;
+}
+
+.palabra{
+    font-weight: bold;
+}
+
+/*game info*/
+
+caption{
+    color: #ffffff;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+
+    text-align: start;
+    margin-bottom: 20px;
+}
+
+table{
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: 2px solid #db3a12;
+    width: 100%;
+}
+
+.table__head{
+    background-color: #abc5c2;
+}
+
+th{
+    border: 1px solid #000000;
+    color: #000000;
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 22px;
+    
+    height: 50px;
+}
+
+.table__body, td{
+    border: 1px solid #000000;
+    color: #ffffff;
+ 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+
+    text-align: center;
+}
+
+td{
+    height: 40px;
+}
+
+.day{
+    background-color: #000000;
+    border: 1px solid #1e1714;
+}
+
+.words{
+    font-weight: bold;
+    padding-right: 1ch;
+}
+
+.queries{
+    margin-top: 40px;
+}
+
+.tel__mail{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
