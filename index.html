@@ -5,50 +5,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/images/LogoMightyducks.png" type="image/x-icon">
-    <link rel="stylesheet" href="./assets/styles/mdhl.css">
-    <!--<link rel="stylesheet" href="./assets/styles/mdhl_2.css">-->
+    <!--<link rel="stylesheet" href="./assets/styles/mdhl.css">-->
+    <link rel="stylesheet" href="./assets/styles/mdhl_2.css">
     <title>Home</title>
 </head>
 
 <body>
-
-    <header class="header__principal">
-        <h1 class="header__principal__titulo">Mighty Ducks Hockey League</h1>
-
-        <nav class="header__principal__nav">
-            <a href="#"> Home </a>
-            <a href="./about.html"> About MDHL </a>
-            <a href="./contact.html"> Contact </a>
-        </nav>
-        <img class="banner_mdhl" src="./assets/images/design1_image1.jpg" alt="Banner ice hockey players">
-    </header>
-
-    <main class="main__home">
-        <h2 class="titulo_2">Upcoming Events</h2>
-
-        <div class="imagenes_mdhl">
-            <img class="logo_mdhl" src="./assets/images/LogoMightyducks.png" alt="Logo Mighty Ducks Hockey League">
-            <img class="hockey__img" src="./assets/images/hockey1.jpg" alt="Ice hockey player">    
-        </div>
-
-        <section class="contenedor">
-            <div class="caja">
-                <h3 class="titulos_home">August 4</h3>
-                <p>MDSL Fundraiser</p>                    
-            </div>
-
-            <div class="caja">
-                <h3 class="titulos_home">August 16</h3>
-                <p>Season Kick-off: Meet the Teams</p>      
+    <div class="layout">
+        <header class="header__principal">
+            <div class="titulo__banner">
+                <h1 class="header__principal__titulo">Mighty Ducks Hockey League</h1>
+                <img class="banner_mdhl" src="./assets/images/design1_image1.jpg" alt="Banner ice hockey players">
             </div>
             
-            <div class="caja">
-                <h3 class="titulos_home">September 1</h3>
-                <p>First Game of the Season (Check Game Schedule for details)</p>    
+            <div class="menu">
+                <img class="logo_mdhl" src="./assets/images/LogoMightyducks.png" alt="Logo Mighty Ducks Hockey League">
+                <nav class="header__principal__nav">
+                    <a href="#">Home</a>
+                    <a href="./about.html">About MDHL</a>
+                    <a href="./contact.html">Contact</a>
+                </nav>
             </div>
-        </section>
-    </main>
-
+        </header>
+    
+        <main>
+            <h2 class="titulo_2">Upcoming Events</h2>
+    
+            <div class="contenedor">
+                <img class="hockey__img" src="./assets/images/hockey1.jpg" alt="Ice hockey player">    
+                
+                <div class="texto">
+                    <section class="caja">
+                        <h3>August 4</h3>
+                        <p>MDSL Fundraiser</p>                    
+                    </section>
+        
+                    <section class="caja">
+                        <h3>August 16</h3>
+                        <p>Season Kick-off: Meet the Teams</p>      
+                    </section>
+                    
+                    <section class="caja">
+                        <h3>September 1</h3>
+                        <p>First Game of the Season (Check Game Schedule for details)</p>    
+                    </section>
+                </div>
+ 
+            </div>
+        </main>
+        
+        <footer>
+            MDHL
+        </footer>
+    </div>
 </body>
 
 </html>

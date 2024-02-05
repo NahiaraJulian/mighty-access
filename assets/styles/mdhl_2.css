@@ -4,123 +4,165 @@
     box-sizing: border-box;
 }
 
-.header__principal__titulo{
-    color: #f5de0a;
-    background-color: #0000009d;
-    text-shadow: 2px 2px 1px #000000;
+.layout{
+    background-color: #1e1714;
     
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/*header style*/
+
+.header__principal__titulo{
+    color: #f8e12e;
+    background-color: #0000008a;    
+    text-shadow: 2px 2px 1px #db3a12;
+    text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 11vh;
     font-weight: bold;
     
-    padding: 10px 30px 10px 30px;
+    box-sizing: content-box;
+    width: 100%;
+    height:50vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     position: absolute;
-    top: 12vh;
-}
-
-.header__principal__nav > a{
-    color: #ffffff;
-
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 16px;
-    text-decoration: none;
-
-    margin: 8px;
-    padding: 7px;
-
-    position: relative;
-    bottom: 50px;
-}
-
-a[href="#"]{
-    border-bottom: 2px solid #ffffff;
-    font-weight: bold;
-}
-
-.header__principal__nav{
-    position: absolute;
-    top: 6vw;
+    top: 0;
 }
 
 .banner_mdhl{
-    margin-top: 9vh;
     width: 100%;
     height: 50vh;
     object-fit: cover;
     object-position: 0% 15%;
 }
 
-.logo_mdhl{
-    width: 16vw;
-    margin: 10px 10px 10px 55px;
-    padding-left: 5px;
-    object-fit: cover;
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
-.hockey__img{
-    width: 25vw;
-    margin: 10px;
+.header__principal__nav{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 25px;
+    
+    margin-top: 10px;
+}
+
+.header__principal__nav > a{
+    color: #ffffff;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.header__principal__nav > a:hover{
+    border-bottom: 2px solid #ffffff;
+    transform: scale(1.1);
+}
+
+a[href="#"]{
+    border-bottom: 2px solid #ffffff;
+    font-weight: bold;
+    
+    padding-bottom: 5px;
+}
+
+.logo_mdhl{
+    width: 10vw;
+    object-fit: cover;
+    
+    margin-left: 10px;
+}
+
+/*main style*/
+
+main{
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+    gap: 45px;
+
+    padding: 20px;
 }
 
 .titulo_2{
     color: #000000;
-    background-color: #f5de0a;
+    background-color: #5fa199;
     border: 2px solid #db3a12;
-
+    border-radius: 25px;
+    width: 30vw;
     
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 30px;
     text-align: center;
     
-    margin-top: 4px;
     padding: 3px;
-}
 
-.imagenes_mdhl{
-    width: 28vw;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
 }
 
 .contenedor{
-    color: #ffffff;
-    display: inline-block;
-    vertical-align: top;
-    width: 67vw;
-    margin-top: 17px;
-    margin-left: 10px;
-}
-
-.mail__to{
-    color: #ffffff;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 100%;
     
-    display: inline-block;
-    vertical-align: top;
-    width: 67vw;
-    margin-top: 27px;
-    margin-left: 20px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
 }
 
-.mail__to a{
+.hockey__img{
+    height: 300px;
+    width: 400px;
+    object-fit: cover;
+}
+
+.texto{
+    color: #ffffff;
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.texto p{
+    padding-left: 10px;
+}
+
+.texto a{
     color: #6f6fdf;
 }
 
-.caja{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin-top: 10px;
-    margin-left: 10px;
-}
-
-.caja p{
-    font-size: 16px;
-    padding: 10px;
-}
-
 .caja h3{
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: bold;
+
+    margin-bottom: 10px;
 }
 
-body{
-    background-color: #000000;
+footer{
+    color: #ffffff;
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
 }
